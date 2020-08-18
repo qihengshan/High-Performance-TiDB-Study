@@ -45,7 +45,7 @@ make
 ```
 
 ## 修改源码：启动事务打印 hello transaction
-**session->kv->txn.go**
+**tidb->kv->txn.go**
 ```go
 // RunInNewTxn will run the f in a new transaction environment.
 func RunInNewTxn(store Storage, retryable bool, f func(txn Transaction) error) error {
